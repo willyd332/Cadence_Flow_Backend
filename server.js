@@ -23,6 +23,7 @@ app.use(session({
 	secret: process.env.SESSION_SECRET,
 	resave: false,
 	saveUninitialized: false,
+  "Access-Control-Allow-Origin": process.env.SESSION_SECRET,
 }));
 
 
